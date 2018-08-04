@@ -1,0 +1,27 @@
+        //listeners
+
+        chrome.runtime.onMessage.addListener(
+  function(request, sender, sendResponse) {
+    console.log(request.greeting);
+    console.log(sender.tab ?
+                "from a content script:" + sender.tab.url :
+                "from the extension");
+    if (request.greeting == "injecting")
+      sendResponse({farewell: 'injected!!'});
+    if (request.greeting == "SPAWN"){
+      const newPokemon = new WildPokemon();
+      sendResponse({farewell:'spawned!'})
+    }
+    //return true
+  });
+        
+        
+        
+        
+        
+        
+        //inside of caught()
+        chrome.runtime.sendMessage({greeting: "CAUGHT", storeId: this.pokemonRandomNumber}, function(response) {
+          console.log('TESTFAREWELL:')
+          console.log(response.farewell);
+        });

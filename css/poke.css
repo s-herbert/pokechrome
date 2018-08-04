@@ -1,0 +1,38 @@
+.wild-pokemon-buttons, .popup-button {
+  position: fixed; 
+  background-color: dodgerblue;
+  border: 1px solid snow;
+  border-radius: 5px; 
+  width: 100px;
+  height: 40px; 
+  font-size: 20px; 
+  font-weight: 700; 
+  color: snow; 
+  
+}
+
+
+.wild-pokemon{
+  cursor: url('https://image.flaticon.com/icons/png/128/361/361998.png') 30 30, auto;
+  width: 150px;
+  height: 150px; 
+  position: fixed;
+}
+
+.pokeball{
+  width: 150px;
+  height: 150px; 
+  position: fixed;
+}
+
+.pokeball-caught{
+  width: 150px;
+  height: 150px; 
+  position: fixed;
+}
+
+.pokeball-escape{
+  width: 150px;
+  height: 150px; 
+  position: fixed;
+}
