@@ -12,7 +12,10 @@
 
   "browser_action": {
    "default_title": "poke",
-   "default_popup": "popup.html"
+   "default_popup": "popup.html",
+   "default_icon": {
+    "16": "assets/pokeball16.png"
+    }
   },
 
 
